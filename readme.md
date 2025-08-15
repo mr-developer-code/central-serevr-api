@@ -20,6 +20,8 @@ sudo mkdir -p /etc/cloudflared
 sudo cp ~/.cloudflared/*.yml /etc/cloudflared/
 sudo cp ~/.cloudflared/*.json /etc/cloudflared/
 
+# change .json path in .yml file
+
 sudo cp /home/coder/Desktop/securegenai/server_api/main-central-api-server.service /etc/systemd/system/main-central-api-server.service
 
 sudo cp /home/coder/Desktop/securegenai/server_api/cloudflared-api.service /etc/systemd/system/cloudflared-api.service
