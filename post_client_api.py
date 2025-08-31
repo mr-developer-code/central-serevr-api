@@ -4,7 +4,7 @@ import json
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "https://nidssecure.netlify.app"}})
 
 @app.route('/api/check-uninstalled-packages', methods=['POST'])
 def check_uninstalled_packages():
