@@ -4,7 +4,7 @@ import json
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "https://nidssecure.netlify.app"}}, supports_credentials=True)
 
 # alert_file_to_read = "client_data/alert.json"
 # loadconn_file_to_read = "client_data/loadconn.json"
